@@ -1,1 +1,1 @@
-# TestRepo2
+# My solutions for codingame.com 
