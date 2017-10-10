@@ -13,14 +13,13 @@ class Player {
             int dist2 = in.nextInt(); // distance to enemy 2
 
             // Write an action using System.out.println()
+            // Enter the code here
 
             if (dist1 < dist2) {
                 System.out.println(enemy1);
             } else {
                 System.out.println(enemy2);
             }
-            // Enter the code here
-
         }
     }
 }
