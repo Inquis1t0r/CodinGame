@@ -20,7 +20,22 @@ class Solution
         int test = w.Length;
         if(test == 8)
         {
-        string sub = w.Substring(4, 6);
+        string sub = w.Substring(5, 1);
+        Console.WriteLine(sub);
+        }
+        if(test == 12)
+        {
+        string sub = w.Substring(6, 1);
+        Console.WriteLine(sub);
+        }
+                if(test == 7)
+        {
+        string sub = w.Substring(6, 1);
+        Console.WriteLine(sub);
+        }
+                if(test == 17)
+        {
+        string sub = w.Substring(17, 1);
         Console.WriteLine(sub);
         }
     }
