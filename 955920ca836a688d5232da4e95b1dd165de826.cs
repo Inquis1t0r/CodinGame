@@ -15,13 +15,29 @@ class Solution
 {
     static void Main(string[] args)
     {
-        string[] inputs = Console.ReadLine().Split(' ');
+        System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
+        // string[] inputs = Console.ReadLine().Split(' ');
+        string[] inputs = "001 011".Split(' ');
         string n1 = inputs[0];
         string n2 = inputs[1];
+
 
         // Write an action using Console.WriteLine()
         // To debug: Console.Error.WriteLine("Debug messages...");
 
+        // Console.WriteLine(encoding.GetBytes(n1));
+        byte[] bytes = Encoding.ASCII.GetBytes(n1);
+        string someString = Encoding.ASCII.GetString(bytes);
+        Console.WriteLine(someString);
+
         Console.WriteLine("binary digits");
     }
+
+    public string ToBinary(string stringPassed)
+    {
+        byte[] bytes = Encoding.ASCII.GetBytes(stringPassed);
+        string someString = Encoding.ASCII.GetString(bytes);
+        return someString;
+    }
+
 }
