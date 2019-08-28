@@ -18,6 +18,23 @@ class Solution
         // Write an action using Console.WriteLine()
         // To debug: Console.Error.WriteLine("Debug messages...");
 
-        Console.WriteLine("answer");
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 1; i < n+1; i++)
+        {
+            sb.Append(i);
+        }
+        String result = sb.ToString();
+        //Console.WriteLine(result);
+        int temp = 0;
+        for(int j = n; j > 0; j--)
+        {
+            result = result.Insert(temp, "+");
+            result = result.Remove(j);
+            //Console.WriteLine(j);
+            Console.WriteLine(result);
+            temp++;
+        }
+
     }
 }
