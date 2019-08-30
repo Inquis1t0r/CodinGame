@@ -1,3 +1,16 @@
+/*
+
+
+4
+mooa
+oano
+otio
+ioon
+
+main anti
+
+*/
+
 using System;
 using System.Linq;
 using System.IO;
