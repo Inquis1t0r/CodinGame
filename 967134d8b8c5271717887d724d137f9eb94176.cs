@@ -25,15 +25,11 @@ class Solution
             sb.Append(i);
         }
         String result = sb.ToString();
-        //Console.WriteLine(result);
-        int temp = 0;
-        for(int j = n; j > 0; j--)
+        for(int j = 0; j < n; j++)
         {
-            result = result.Insert(temp, "+");
-            result = result.Remove(j);
-            //Console.WriteLine(j);
+            result = result.Insert(j, "+");
             Console.WriteLine(result);
-            temp++;
+            result = result.Remove(result.Length - 1);
         }
 
     }
