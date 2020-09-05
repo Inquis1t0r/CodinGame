@@ -19,6 +19,6 @@ class Solution
         // Write an answer using Console.WriteLine()
         // To debug: Console.Error.WriteLine("Debug messages...");
 
-        Console.WriteLine("Answer");
+        Console.WriteLine(M * N * M);
     }
 }
