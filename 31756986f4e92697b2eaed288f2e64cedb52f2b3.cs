@@ -42,7 +42,9 @@ class Solution
         // Write an answer using Console.WriteLine()
         // To debug: Console.Error.WriteLine("Debug messages...");
         //TODO:https://allagora.wordpress.com/2013/10/03/the-toast-formula/
-        result = Enumerable.Range(1, n).Aggregate(1, (p, item) => p * item) / (Enumerable.Range(1, n - 2).Aggregate(1, (p, item) => p * item) * Enumerable.Range(1, 2).Aggregate(1, (p, item) => p * item));
-        Console.WriteLine(result);
+        //result = Enumerable.Range(1, n).Aggregate(1, (p, item) => p * item) / (Enumerable.Range(1, n - 2).Aggregate(1, (p, item) => p * item) * Enumerable.Range(1, 2).Aggregate(1, (p, item) => p * item));
+        //Console.WriteLine(result);
+             Console.WriteLine(Enumerable.Range(1, n).Aggregate(1, (p, item) => p * item) / (Enumerable.Range(1, n - 2).Aggregate(1, (p, item) => p * item) * Enumerable.Range(1, 2).Aggregate(1, (p, item) => p * item)));
+
     }
 }
